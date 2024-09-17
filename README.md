@@ -1,28 +1,21 @@
 # EVM Auto Transfer
-## Getting Started
-### Prerequisites
-Ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- npm (Node Package Manager)
 ### Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/dante4rt/evm-auto-transfer.git
-   cd evm-auto-transfer
-   ```
+```bash
+git clone https://github.com/dante4rt/evm-auto-transfer.git
+cd evm-auto-transfer
+```
 2. Install the necessary packages:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 ### Configuration
-1. **Define the Chains**:
-
-   ```bash
-   nano chains/testnet.json
-   ```
-
-     
-```json
+1. Define the Chains:
+```bash
+   rm chains/testnet.json && nano chains/testnet.json
+```
+- Edit file `testnet.json` as in the code below. (Ctrl + X, Y and Enter will do to save).    
+```bash
 [
   {
     "name": "Movement MEVM",
@@ -104,19 +97,18 @@ Ensure you have the following installed:
 ]
 ```
 
-2. **Define Private Keys**:
-     ```json
-     nano privateKeys.json
-     ```
-
-     ```json
-     [
-         "0xYOUR_PRIVATE_KEY_1"
-     ]
-     ```
-### Usage
-1. Run the script for random address generation and transactions:
-   ```bash
-   npm start
-   ```
+2. Define Private Keys:
+```bash
+rm privateKeys.json && nano privateKeys.json
+```
+- Edit file `privateKeys.json` as in the code below. (Ctrl + X, Y and Enter will do to save).
+```bash
+   [
+      "0xYOUR_PRIVATE_KEY"
+   ]
+```
+3. Start transfer:
+```bash
+npm start
+```
 
