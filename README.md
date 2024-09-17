@@ -17,11 +17,14 @@ Ensure you have the following installed:
 ### Configuration
 1. **Define the Chains**:
 
-     ```json
-     nano chains/testnet.json
-     ```
-     ```json
-     {
+   ```bash
+   nano chains/testnet.json
+   ```
+
+     
+```json
+[
+  {
     "name": "Movement MEVM",
     "rpcUrl": "https://mevm.devnet.imola.movementlabs.xyz",
     "chainId": "30732",
@@ -98,7 +101,8 @@ Ensure you have the following installed:
     "symbol": "APE",
     "explorer": "https://curtis.explorer.caldera.xyz"
   }
-     ```
+]
+```
 
 2. **Define Private Keys**:
      ```json
