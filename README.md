@@ -99,7 +99,7 @@ npm install
 
 2. Define Private Keys:
 ```bash
-rm privateKeys.json && nano privateKeys.json
+nano privateKeys.json
 ```
 - Edit file `privateKeys.json` as in the code below. (Ctrl + X, Y and Enter will do to save).
 ```bash
